@@ -8,7 +8,7 @@ const App = () => {
   const btnTxt = { text: "Obj can't be React Child" };
   return (
     <div>
-      <label for="name" className="label">
+      <label htmlFor="name" className="label">
         {labelTxt()}
       </label>
       <input id="name" type="text" />
