@@ -2,19 +2,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const labelTxt = () => "Enter Name: ";
 // Create react component
-const getButtonText = () => "Click on Me";
 const App = () => {
-  // const btnTxt = "Click Me";
+  const btnTxt = { text: "Obj can't be React Child" };
   return (
     <div>
       <label for="name" className="label">
-        Enter Name:
+        {labelTxt()}
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "blue", color: "white" }}>
-        {/* {btnTxt} */}
-        {getButtonText()}
+        {btnTxt.text}
       </button>
     </div>
   );
